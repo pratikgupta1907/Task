@@ -8,10 +8,17 @@
 import UIKit
 
 class ViewController2: UIViewController {
+    
+    @IBOutlet weak var signOutBtn: UIBarButtonItem!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
 
+    @IBAction func signOutPressed(_ sender: UIBarButtonItem) {
+        
+        dismiss(animated: true, completion: nil)
+    }
 }
